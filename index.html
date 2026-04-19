@@ -20,11 +20,11 @@
 
             <div class="links">
                 <ul class="link1">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Skill</a></li>
-                    <li><a href="">Project</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             <div class="mobile">
@@ -44,56 +44,68 @@
                  <!---------HERO SECTION----------->
     
     <main>
-        <section id="home">
-           <div class="hero">
-            <h2>EZENWUKWA CHIDIGO LOIS</h2>
-            <p>Full-Stack Developer</p>
-            <img src="man with a laptop.jpg" alt="profile picture">
+        <section id="home" class="hero">
+     
+                <div class="hero-content">
+             
+                  <h2>EZENWUKWA CHIDIGO LOIS</h2
+                  <p>Full-Stack Developer</p>
+                  <a href=""> view my work</a>
+                </div>
+            <div class="hero-image">
+                <img src="man with a laptop.jpg" alt="profile pic">
+            </div>
 
-           </div>
         </section> 
             <!------ABOUT SECTION-------->
 
-            <section id="about">
+            <section id="about" class="about">
                 <h2>About me</h2>
-                <div class="about">
-                    <img src="IMG_2225.jpg" alt="">
-                </div>
-                <div>
-                    <p>
-                        I am a Software Developer in training  with little experience in building full-stack web application, though still growing in my carrier.
-                        I specialize in building backen APIs, designing responsive websites.
-                    </p>
-                    <p>
-                        I am enthused in bulding and solving real-world by building extentive, efficient and doable application.
-                    </p>
-                    <p>
-                        I will be glad to get involved in solving  real-world problems, which also a plus to my technical skill and an addition to my portfolio.
-                    </p>
+                <div class="about-container">
+                   <div class="about-image">
+                      <img src="IMG_2225.jpg" alt="">
+                   </div>
+                    <div class="about-text">
+                        <p>
+                            I am a software developer in traning, still growing with hands-on experience in building Full-Stack web applications. I specialise in developing  backends, designing reponsive user interfaces.
+                        </p>
+                
+                        <p>
+                
+                             I am enthused in bulding and solving real-world problems by building extentive, efficient and doable application.
+                        </p>
+
+                        <p>
+                             I will be glad to get involved in solving  real-world problems, which is also a plus to my technical skill and an addition to my portfolio.
+                        </p>
+                 
+                    </div>
                 </div>
             </section>
            
                      <!----------SKILLS---------->
-                    <section id="skill">
+                    <section id="skill" class="skill">
                         
                      <h2> My Skills</h2>
-                        <div class="skill">
-                            <div>
+                        <div class="skill-grid">
+                        
+                            <div class="skill-card">
+                                <i class="fa-brands fa-html-alt"></i>
                                 <h3>HTML</h3>
+                         
                             </div>
-                        </div>
-                        <div class="skill">
-                            <div>
-                                <h3>CSS</h3>
+                           <div class="skill-card">
+                               <i class="fa-brands fa-css-alt"></i>
+                                  <h3>CSS</h3>
+                            
                             </div>
-                        </div>
-                        <div class="skill">
-                            <div>
-                                <h3>GIT</h3>
+                            <div class="skill-card">
+                                <i class="fa-brands fa-tailwind-alt"></i>
+                                <h3>TAILWIND</h3>
+                            
                             </div>
-                        </div>
-                        <div class="skill">
-                            <div>
+                            <div class="skill-card">
+                               <i class="fa-brands fa-github-alt"></i>
                                 <h3>GITHUB</h3>
                             </div>
                         </div>
@@ -108,36 +120,41 @@
                  </section>
 
                  <!------CONTACT------>
-                <section id="contact">
+                <section id="contact" class="contact">
+                   <div class="contact-container">
 
-                    <h3>Contact Me</h3>
+                      <h2>Contact Me</h2>
+                        <div>
+                           <form class="form">
+                             <input type="text" placeholder="Your Name" required>
+                             <input type="mail" placeholder="Your Email" required>
+                             <textarea placeholder="Comment" rows="6"></textarea>
+                             <a href="Thank-you.htmll">Send</a>
+                            </form>
+                        
+           
+                           <!--------CONTACT INFO------->
+                           <div class=" contact-info">
+                               <p>
+                               <i class="fa-solid fa-evelope"></i>
+                                 Email:
+                               <a href="mailto:ezenwukwachidiogolois@gmail.come">ezenwukwachidiogolois@gmail.com</a>
+                                  
+                                 </p>
+                                <p>
+                                   Phone Number:
+                                   <a href="callon:08107624469">081076244698</a>
+                                </p>
+                           </div>
 
-                    <form class="form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="mail" placeholder="Your Email" required>
-                    <textarea placeholder="Comment" rows="6"></textarea>
-                    <button type="submit">Send</button>
-                    </form>
+                        </div>>
+                    </div>
                 </section>
-                   <!--------CONTACT INFO------->
-               <div class="info">
-                <p>
-                    <i class="fa-solid fa-evelope"></i>
-                    Email:
-                    <a href="mailto:ezenwukwachidiogolois@gmail.come">ezenwukwachidiogolois@gmail.com</a>
-                </p>
-                <p>
-                    Pjone Number:
-                    <a href="callon:08107624469">081076244698</a>
-                </p>
-               </div>>
-
-
 
     </main>
                    <!-------FOOTER-------->
                    <FOoter>
-                    <P>2026 EZENWUKWA CHIDIGO LOIS. All right reserved.</P>
+                    <P>&copy; 2026 EZENWUKWA CHIDIGO LOIS. All right reserved.</P>
                    </FOoter>
 
 </body>
