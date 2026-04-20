@@ -25,6 +25,8 @@ h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 40px;
 }
+/* --------HERO---------- */
+
 .hero-imgage {
     display: flex;
     justify-content: right;
@@ -61,6 +63,7 @@ h2 {
     align-items: center;
 }
 
+/* -----------SKILL-------------- */
 .skill-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -122,8 +125,43 @@ ul li {
 
 a {
     text-decoration: none;
+
+    gap: 20px;
+}  
+
+/* ================= PROJECTS ================= */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}    
+
+.project-card {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 10px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
 }
 
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    height: 200px;
+    width: 400px;
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+}
+
+.project-card h3 {
+    margin: 10px 0;
+}
+/* ------------Header--------------- */
 header {
     width: 100%;
     height: 4.5rem;
@@ -156,7 +194,7 @@ header nav > a {
     padding: 3px ;
 }
 
-
+/* ------------LOGO----------------- */
 .logo {
     display: flex;
     gap: 0.5rem;
@@ -176,6 +214,7 @@ header nav > a {
 .logo span:nth-child(2) {
     font-weight: 700;
 }
+/* ----------MOBILE------------- */
 .mobile ul.list {
     position:absolute ;
     right: 0;
@@ -198,7 +237,7 @@ font-weight:600;
 button {
     font-size: 1.2rem;
 }
-/*------------HERO-------------*/
+
 
 /*-------- Media---------*/
 
@@ -224,7 +263,20 @@ button {
     width: 90%;
 
  }
+   .projects-grid {
+        grid-template-columns: 1fr;
+        width: 100%;
+        
+    }
+    .form {
+        justify-content: center;
+    }
    
+    .contact-container {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
  .hero {
     min-width: auto;
     grid-template-columns: 1fr;
@@ -251,10 +303,8 @@ button {
     grid-template-columns: 1fr;
 
  }
- .contact-container {
-    grid-template-columns: 1fr;
-    justify-items: center;
- }
+ 
+
  .about-text {
     text-align: center;
     width: 80%;
@@ -278,8 +328,7 @@ button {
  .hero-content a {
     justify-self: center;
  }
- .contact-container {
-    grid-template-columns: 1fr;
- }
+ 
+
 } 
 
